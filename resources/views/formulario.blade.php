@@ -16,14 +16,16 @@
   <div class="card-body">
 
   <form method="POST" action="/guardarRecuerdo">
+  @csrf
+
   <div class="mb-3">
     <label class="form-label">Titulo: </label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" name="txtTitulo">
   </div>
 
   <div class="mb-3">
     <label class="form-label">Recuerdo</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" name="txtRecuerdo">
   </div>
 
   
